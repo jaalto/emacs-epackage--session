@@ -1,0 +1,43 @@
+Package: session
+Section: extensions
+License: GPL-3+
+License-Text:
+Depends: emacs (>= 23)
+Status: unmaintained stable
+Archive:
+Compat:
+Maintainer: Jari Aalto <jari.aalto@cante.net>
+Bugs:
+Upstream: Christoph Wedler <wedler@users.sourceforge.net>
+Upstream-Bugs: https://sourceforge.net/projects/emacs-session
+Vcs-Type:
+Vcs-Url:
+Vcs-Browser:
+Vcs-Args:
+Vcs-User:
+Vcs-Password:
+Homepage: https://sourceforge.net/projects/emacs-session
+Wiki: https://www.emacswiki.org/emacs/EmacsSession
+Commentary:
+Info:
+Description: save variables, registers and buffers across sessions
+
+ To restore the variables, this package writes a session file
+ (~/.session) when you exit Emacs. The file includes the values of
+ variables which are automatically updated by Emacs during some
+ editing operations:
+ .
+ - Histories of user input. For example, strings used in a
+   find/replace command, names of files you have visited, etc.
+ .
+ - Contents of registers, whether they are texts or buffer/file
+   positions. Buffer positions are automatically converted to file
+   positions.
+ .
+ - List of recently copied/cut text blocks to paste, global markers to
+   jump to, and other so-called rings.
+ .
+ - List of recently changed files with their places and some
+   buffer-local variables
+ .
+ Note: 2022-01-20 the code hasn't been updated since 2016.
